@@ -376,7 +376,9 @@ void DataFileReader::parse_fixes_file() {
 void DataFileReader::parse_fixes_file_line(int line_no, const std::string &line) {
     auto splitted = str_explode(line, ' ');
     
-    if (splitted.size() != 6) {
+    //TODO: LR added a 7th column in 1200, but there's spaces in that column, fix in the future
+    //The condition is changed != -> <, and the 7th column is discarded
+    if (splitted.size() < 6) {
         LOG << logger_level_t::WARN << "[DataFileReader] earth_fix.dat:" << line_no << ": invalid nr. parameters." << ENDL;
         return;     // Something invalid here
     }
