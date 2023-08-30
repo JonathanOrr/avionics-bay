@@ -284,7 +284,7 @@ void DataFileReader::parse_navaids_file_line(int line_no, const std::string &lin
         return;     // Something invalid here
     }
 
-    if (splitted[0] == "1150" && splitted[4] == "cycle") {
+    if (splitted[0] == "1200" && splitted[4] == "cycle") {
         unsigned int year  = 2000 + std::stoi(splitted[5].substr(0,2));
         unsigned int month = std::stoi(splitted[5].substr(2));
         xpdata->set_navdata_cycle(month, year);
