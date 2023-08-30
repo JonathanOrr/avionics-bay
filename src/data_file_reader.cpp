@@ -21,7 +21,7 @@
 #define FIX_FILE_PATH  "Resources/default data/earth_fix.dat"
 #define MORA_FILE_PATH "Resources/default data/earth_mora.dat"
 #define HOLD_FILE_PATH "Resources/default data/earth_hold.dat"
-#define APT_FILE_PATH "Resources/default scenery/default apt dat/Earth nav data/apt.dat"
+#define APT_FILE_PATH "Global Scenery/Global Airports/Earth nav data/apt.dat"
 
 #define NEAREST_APT_UPDATE_SEC 2
 
